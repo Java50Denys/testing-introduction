@@ -5,7 +5,7 @@ import static telran.numbers.Calculator.*;
 
 import org.junit.jupiter.api.Test;
 
-class CalculiatorTest {
+class CalculatorTest {
 
 	@Test
 	void testSum() {
@@ -38,15 +38,15 @@ class CalculiatorTest {
 		assertEquals(0, divide(2, 4));
 		assertEquals(2, divide(4, 2));
 		assertEquals(-2, divide(-4, 2));
-		assertEquals(2, divide(-4, -2));
+		assertEquals(2, divide (-4, -2));
 	}
 
 	@Test
 	void testRemainder() {
 		assertEquals(2, remainder(2, 4));
-		assertEquals(2, remainder(4, 2));
+		assertEquals(0, remainder(4, 2));
 		assertEquals(-1, remainder(-10, 3));
-		assertEquals(1, remainder(-10, -3));
+		assertEquals(-1, remainder(-10, -3));
 	}
 
 }
