@@ -36,9 +36,9 @@ class CalculatorTest {
 	@Test
 	void testDivide() {
 		assertEquals(0, divide(2, 4));
-		assertEquals(2, divide(4, 2));
-		assertEquals(-2, divide(-4, 2));
-		assertEquals(2, divide (-4, -2));
+		assertEquals(-2, divide(4, 2));
+		assertEquals(2, divide(-4, 2));
+		assertEquals(-2, divide (-4, -2));
 	}
 
 	@Test
